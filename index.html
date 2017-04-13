@@ -25,6 +25,15 @@
 </body>
 <script type="text/javascript" src="./src/touch.js"></script>
 <script type="text/javascript">
-	window.touch(document.getElementById('app'));
+	var funcSwipeUp = function() {
+		console.log('SwipeUp');
+	};
+	var funcSwipeDown = function() {
+		console.log('SwipeDown');
+	};
+	window.touch(document.getElementById('app'))
+	.attach('SwipeUp', funcSwipeUp)
+	.attach('SwipeDown', funcSwipeDown)
+	.detech('SwipeUp', funcSwipeUp);
 </script>
 </html>
