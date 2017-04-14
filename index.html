@@ -25,15 +25,22 @@
 </body>
 <script type="text/javascript" src="./src/touch.js"></script>
 <script type="text/javascript">
-	var funcSwipeUp = function() {
-		console.log('SwipeUp');
+	var funcTouchUp = function(e) {
+		console.log('touchUp');
 	};
-	var funcSwipeDown = function() {
-		console.log('SwipeDown');
+	var funcTouchDown = function() {
+		console.log('touchDown');
+	};
+	var funcTouchLeft = function() {
+		console.log('touchLeft');
+	};
+	var funcTouchRight = function() {
+		console.log('touchRight');
 	};
 	window.touch(document.getElementById('app'))
-	.attach('SwipeUp', funcSwipeUp)
-	.attach('SwipeDown', funcSwipeDown)
-	.detech('SwipeUp', funcSwipeUp);
+	.attach('touchUp', funcTouchUp)
+	.attach('touchDown', funcTouchDown)
+	.attach('touchLeft', funcTouchLeft)
+	.attach('touchRight', funcTouchRight);
 </script>
 </html>
