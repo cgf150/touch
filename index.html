@@ -1,46 +1,11 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
- 	<title>touch</title> 
- 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
-	<style type="text/css">
-	body{
-		
-	}
-	#app{
-		background-color: #efebe9;
-		width: 100%;
-		margin: 0px;
-		height: 100%;
-		position: absolute;
-	}
-</style>
-</head>
-
-<body> 
-
-<div id="app"></div>
-
-</body>
-<script type="text/javascript" src="./src/touch.js"></script>
-<script type="text/javascript">
-	var funcTouchUp = function(e) {
-		console.log('touchUp');
-	};
-	var funcTouchDown = function() {
-		console.log('touchDown');
-	};
-	var funcTouchLeft = function() {
-		console.log('touchLeft');
-	};
-	var funcTouchRight = function() {
-		console.log('touchRight');
-	};
-	window.touch(document.getElementById('app'))
-	.attach('touchUp', funcTouchUp)
-	.attach('touchDown', funcTouchDown)
-	.attach('touchLeft', funcTouchLeft)
-	.attach('touchRight', funcTouchRight);
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+  </body>
 </html>

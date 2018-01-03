@@ -1,3 +1,10 @@
+/**
+ * 
+ * @author Cao Yang
+ * @github https://github.com/answershuto/touch
+ * 
+ */
+
 (function(win, doc, factory) {
 	win.touch = factory();
 })(window, document, function(){
@@ -10,12 +17,10 @@
 	/*判断是否单次手势，因为在move的时候判断的，不需要频繁触发*/
 	var isActiveFlag = false;
 
+	/*系统配置*/
 	var cfg = {
+		/*设置检测滑动灵敏度，滑动多少px时会响应滑动事件*/
 		Sensitivity: 50
-	}
-
-	function getDirection(){
-
 	}
 
 	function start(e) {
