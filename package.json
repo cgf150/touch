@@ -1,6 +1,6 @@
 {
-  "name": "test",
-  "description": "test",
+  "name": "vue-touch",
+  "description": "a Vue.js touch library.",
   "version": "1.0.0",
   "author": "cao yang",
   "private": true,
